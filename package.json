@@ -1,5 +1,6 @@
 {
-  "name": "ts-course-proj-2",
+  "name": "github-user-finder",
+  "homepage": "https://jkwal.github.io/github-user-finder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +11,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "component": "generate-react component"
+    "component": "generate-react component",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +39,7 @@
     "@types/react-dom": "18.0.6",
     "generate-react-cli": "^7.3.0",
     "sass": "^1.54.5",
-    "typescript": "4.4.2"
+    "typescript": "4.4.2",
+    "gh-pages": "^5.0.0"
   }
 }
